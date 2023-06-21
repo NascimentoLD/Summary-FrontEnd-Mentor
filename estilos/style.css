@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 62.5%;
+    font-family: 'HankenGrotesk', sans-serif;
+}
+
+html, body{
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content{
+    width: 550px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.190);
+    border-radius: 30px;
+    gap: 30px;
+}
+
+/* Estilização da primeira sesão */
+
+.frist-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+
+.frist-title{
+    color: rgb(206, 206, 206);
+    padding-top: 10px;
+}
+
+.central-gradient{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    font-size: 0.8rem;
+    color: white;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.central-gradient > h3{
+    font-size: 1.5rem;
+}
+
+.great{
+    width: 80%;
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.great > h2{
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+}
+
+.great > p{
+    font-size: 0.5rem;
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Estilização da Segunda Sessão */
+
+.secundary-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.central-summary{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reaction{
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: hsla(0, 100%, 67%, 0.180);
+    color: hsl(0, 100%, 67%);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.memory{
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: hsla(39, 100%, 56%, 0.180);
+    color: hsl(39, 100%, 56%);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.verbal{
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: hsla(166, 100%, 37%, 0.180);
+    color: hsl(166, 100%, 30%);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.visual{
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    background-color: hsla(234, 85%, 45%, 0.180);
+    color: hsl(234, 85%, 45%);
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.points-1{
+    display: block;
+    margin-left: 100px;
+}
+
+.points-2{
+    display: block;
+    margin-left: 104px;
+}
+
+.points-3{
+    display: block;
+    margin-left: 112px;
+}
+
+.points-4{
+    display: block;
+    margin-left: 112px;
+}
+
+/* Estilização do Botão */
+
+.btn{
+    width: 88%;
+    padding: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 375px) {
+    .main-content{
+        height: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: none;
+        gap: 10px;
+    }
+
+    .frist-section{
+        width: 90%;
+        padding-top: 15px;
+    }
+
+    .frist-section > h1{
+        padding-bottom: 15px;
+    }
+
+    .central-gradient{
+        padding-bottom: 20px;
+        height: 100px;
+    }
+
+    .great > p{
+        padding-bottom: 20px;
+    }
+
+    .secundary-section{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .points-1, .points-2, .points-3, .points-4{
+        padding-left: 65px;
+    }
+}
