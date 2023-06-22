@@ -187,7 +187,46 @@ html, body{
 
 /* Media Query */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px){
+    .main-content{
+        height: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: none;
+        gap: 10px;
+    }
+
+    .frist-section{
+        width: 90%;
+        padding-top: 15px;
+    }
+
+    .frist-section > h1{
+        padding-bottom: 15px;
+    }
+
+    .central-gradient{
+        padding-bottom: 20px;
+        height: 100px;
+    }
+
+    .great > p{
+        padding-bottom: 20px;
+    }
+
+    .secundary-section{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .points-1, .points-2, .points-3, .points-4{
+        padding-left: 65px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .main-content{
         height: 95%;
         display: flex;
